@@ -1,13 +1,13 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
+import Carousel from 'react-bootstrap/Carousel';
 import Slider1 from '../Assets/Slider1.jpeg';
 import Slider2 from '../Assets/Slider2.jpeg';
 import Slider3 from '../Assets/Slider3.jpeg';
 
-export default function Slider() {
+function Slider() {
 	return (
-		<Carousel>
-			<Carousel.Item>
+		<Carousel style={{ 'height': '530px' }}>
+			<Carousel.Item style={{ 'height': '550px' }}>
 				<img
 					className="d-block w-100"
 					src={Slider1}
@@ -18,7 +18,7 @@ export default function Slider() {
 					<p>Action houses</p>
 				</Carousel.Caption>
 			</Carousel.Item>
-			<Carousel.Item>
+			<Carousel.Item style={{ 'height': '550px' }}>
 				<img
 					className="d-block w-100"
 					src={Slider2}
@@ -29,7 +29,7 @@ export default function Slider() {
 					<p>Action houses</p>
 				</Carousel.Caption>
 			</Carousel.Item>
-			<Carousel.Item>
+			<Carousel.Item style={{ 'height': '550px' }}>
 				<img
 					className="d-block w-100"
 					src={Slider3}
@@ -41,5 +41,6 @@ export default function Slider() {
 				</Carousel.Caption>
 			</Carousel.Item>
 		</Carousel>
-	)
+	);
 }
+export default Slider;
