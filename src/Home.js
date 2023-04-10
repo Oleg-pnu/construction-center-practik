@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import Slider from './Components/Slider';
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import Static1 from './Assets/Static1.jpg';
 import Static2 from './Assets/Static2.jpg';
 import Static3 from './Assets/Static3.jpg';
@@ -10,10 +10,10 @@ import House from './Assets/House.jpg';
 export const Home = () => (
 	<>
 		<Slider />
-		<Container style={{ paddingTop: '3rem', paddingBottom: '2rem' }}>
+		<Container style={{ paddingTop: "3rem", paddingBottom: "2rem" }}>
 			<Row>
 				<Col>
-					<Card style={{ width: '18rem' }}>
+					<Card style={{ width: "18rem" }}>
 						<Card.Img variant="top" src={Static1} />
 						<Card.Body>
 							<Card.Title>Sky City Plus</Card.Title>
@@ -25,7 +25,7 @@ export const Home = () => (
 					</Card>
 				</Col>
 				<Col>
-					<Card style={{ width: '18rem' }}>
+					<Card style={{ width: "18rem" }}>
 						<Card.Img variant="top" src={Static2} />
 						<Card.Body>
 							<Card.Title>Altair 3</Card.Title>
@@ -36,7 +36,7 @@ export const Home = () => (
 					</Card>
 				</Col>
 				<Col>
-					<Card style={{ width: '18rem' }}>
+					<Card style={{ width: "18rem" }}>
 						<Card.Img variant="top" src={Static3} />
 						<Card.Body>
 							<Card.Title>Sea residence</Card.Title>
