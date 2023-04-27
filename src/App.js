@@ -1,7 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NaviBar from './Components/Navibar';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Router, Route, Routes, NavLink } from 'react-router-dom';
+import Footerr from './Components/Footerr';
 
 
 import { Home } from './Home';
@@ -11,14 +12,15 @@ import { About } from './About';
 function App() {
 	return (
 		<>
-			<Router>
+			<BrowserRouter>
 				<NaviBar />
 				<Routes>
 					<Route exect path="/" element={<Home />} />
 					<Route exect path="/users" element={<Users />} />
 					<Route exect path="/about" element={<About />} />
 				</Routes>
-			</Router>
+				<Footerr />
+			</BrowserRouter>
 		</>
 	);
 }
